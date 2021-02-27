@@ -9,7 +9,20 @@ import styled from 'styled-components/macro';
 interface Props {}
 
 export const LoginPage = memo((props: Props) => {
-  return <Div></Div>;
+  return (
+    <Login>
+      <Div>
+        <P>A customized spotify playlist for your needs</P>
+      </Div>
+    </Login>
+  );
 });
 
+const Login = styled.div``;
+
 const Div = styled.div``;
+
+const P = styled.p`
+  font-family: 'Roboto';
+  font-weight: normal;
+`;
